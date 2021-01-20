@@ -46,10 +46,12 @@
     }
 
     .card-container:hover .card-back {
+      visibility:inherit;
       transform: rotateY(0deg);
     }
 
     .card-back {
+      visibility: hidden;
       background: black;
       color: white;
       transform: rotateX(180deg);
@@ -106,9 +108,9 @@
                 </div>
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 1000px;">
+              <div class="card card-back" style="width: 22rem; perspective: 1000px;" id="particles-js">
 
-                <div class="card-body mx-auto text-center mt-3">
+                <div class="card-body mx-auto text-center mt-3" style="position: absolute;">
                   <p><img src="Images/photo-1494059980473-813e73ee784b.jpeg" style="border-radius:2rem;"                    alt="Card image cap"></p>
                   <p class="card-text">A Simple and easy applet Game in java having three puzzles to solve one by one.                  </p>
                   <p class="card-text">Provide a JRE file in New folder.                  </p>
@@ -129,9 +131,9 @@
                 
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 800px;">
+              <div class="card card-back" style="width: 22rem; perspective: 800px;" id="particles-js-1">
 
-                <div class="card-body mx-auto text-center mt-1">
+                <div class="card-body mx-auto text-center mt-1" style="position: absolute;">
                   <p><img src="Images/photo-1604876670659-eaf0ccc462a9.jpeg" style="border-radius:2rem;"                    alt="Card image cap"></p>
                   <p class="card-text">A Simple mp3 player in python with the basic feature of an mp3 player</p>
                   <p class="card-text">Has a code File and images file</p>
@@ -154,9 +156,9 @@
                 </div>
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 800px;">
+              <div class="card card-back" style="width: 22rem; perspective: 800px;" id="particles-js-2">
 
-                <div class="card-body">
+                <div class="card-body" style="position: absolute;">
                   <p class="card-text">Not Completed Yet.</p>
                 </div>
               </div>
@@ -186,9 +188,9 @@
                 
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 1000px;">
+              <div class="card card-back" style="width: 22rem; perspective: 1000px;" id="particles-js-4">
 
-                <div class="card-body mx-auto text-center mt-3">
+                <div class="card-body mx-auto text-center mt-3" style="position: absolute;">
                   <p class="card-text">Not Competed Yet.</p>
                 </div>
               </div>
@@ -203,9 +205,9 @@
                 
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 800px;">
+              <div class="card card-back" style="width: 22rem; perspective: 800px;" id="particles-js-5">
 
-                <div class="card-body mx-auto text-center mt-1">
+                <div class="card-body mx-auto text-center mt-1" style="position: absolute;">
                   <p class="card-text">Not Competed Yet.</p>
                 </div>
               </div>
@@ -222,9 +224,9 @@
                 </div>
               </div>
 
-              <div class="card card-back" style="width: 22rem; perspective: 800px;">
+              <div class="card card-back" style="width: 22rem; perspective: 800px;" id="particles-js-6">
 
-                <div class="card-body">
+                <div class="card-body" style="position: absolute;">
                   <p class="card-text">Not Competed Yet.</p>
                 </div>
               </div>
@@ -295,7 +297,30 @@
   </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+      particlesJS.load('particles-js','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-1','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-2','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-3','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-4','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-5','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+      particlesJS.load('particles-js-6','Particles.json',function(){
+          console.log('Particle json loaded')
+      })
+  </script>
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
